@@ -1,12 +1,12 @@
 import React from 'react';
-import Conact from './Contact.js';
+import Contact from './Contact.js';
 
 const ContactList = (props) => {
   if (props.contacts.length === 0){
     return <p>Waiting for Contact</p>
   }
 
-  const contacts = props.contacts.map((contact, index) +=> {
+  const contacts = props.contacts.map((contact, index) => {
     return (
       <li key={index} className="component-item">
       <div className="component">

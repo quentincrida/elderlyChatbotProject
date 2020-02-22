@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import ChatbotContainer from './ChatbotContainer';
 import DisplayContainer from './DisplayContainer';
+import ContactList from '../components/contacts/ContactList';
+
 
 class MainContainer extends Component{
 
@@ -25,7 +27,7 @@ constructor(props) {
     <div className ="main-container">
     <h2>I am a Main Container</h2>
     <ChatbotContainer/>
-    <DisplayContainer/>
+    <DisplayContainer contacts ={this.contacts}/>
     </div>
 
   );
